@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About GlobalX</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        background: linear-gradient(135deg, rgba(21, 145, 207, 1) 0%, rgba(201, 41, 116, 1) 100%);
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        align-items: center;
+    }
+
+    header {
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    header h1 {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 3rem;
+        margin: 0;
+        color: #ffffff;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .xcolor {
+        color: rgba(201, 41, 116, 1);
+    }
+
+    .content {
+        padding: 30px;
+        max-width: 900px;
+        margin: 20px;
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        text-align: justify;
+    }
+
+    .content h2 {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        text-align: center;
+        color: rgb(21, 145, 207);
+    }
+
+    .content p, .content ul li {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        margin-bottom: 20px;
+    }
+
+    .content ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .content ul li::before {
+        content: "\2713";
+        color: rgb(201, 41, 116);
+        margin-right: 10px;
+    }
+
+    .founder {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 30px;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .founder img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        margin-right: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .founder div {
+        flex: 1;
+    }
+
+    .founder h3 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+        color: rgba(201, 41, 116, 1);
+    }
+
+    footer {
+        background-color: rgba(0, 0, 0, 0.8);
+        text-align: center;
+        padding: 20px 10px;
+        width: 100%;
+    }
+
+    footer p {
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .founder img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 15px;
+        }
+
+        .founder {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+   .homebtn{
+    text-decoration: none;
+    color:whitesmoke;
+    font-size: medium;
+   }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Global<span class="xcolor">X</span></h1>
+        <p class="homebtn"><a href="index.html">Home</a></p>
+    </header>
+
+    <section class="content">
+        <h2>Who We Are</h2>
+        <p>GlobalX is an innovative and dynamic web development scaling company dedicated to crafting cutting-edge digital solutions. Our mission is to empower businesses by providing tailored technology and design services that drive growth and success in the digital age.</p>
+
+        <h2>What We Do</h2>
+        <p>At GlobalX, we specialize in:</p>
+        <ul>
+            <li>Custom website design and development to create seamless user experiences.</li>
+            <li>Scalable web applications tailored for businesses of all sizes.</li>
+            <li>AI-powered tools and automation solutions to enhance efficiency.</li>
+            <li>Comprehensive digital marketing strategies for a stronger online presence.</li>
+            <li>Ongoing support and maintenance to ensure optimal performance.</li>
+        </ul>
+
+        <h2>Why Choose GlobalX?</h2>
+        <p>We believe in innovation, collaboration, and delivering measurable results. Our team of skilled professionals combines creativity with technical expertise to transform ideas into impactful digital solutions. When you choose GlobalX, you choose a partner committed to your success.</p>
+
+        <div class="founder">
+            <img src="myimage.jpg" alt="Founder Image">
+            <div>
+                <h3>Creators</h3>
+                <h1>Vikas<br> Founder of Global<span class="xcolor">X</span> </h1>
+            </div>
+        </div>
+
+        <p><strong>Let GlobalX take your business to the next level.</strong></p>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> GlobalX - Innovate & Scale. All rights reserved.</p>
+        <p>Created by <strong>Shadow Syndicate</strong></p>
+    </footer>
+
+    <script>
+        // Dynamically set the current year in the footer
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
